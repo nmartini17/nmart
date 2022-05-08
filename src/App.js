@@ -30,7 +30,6 @@ export default function App() {
       <div className='Icons'>
         <IconContext.Provider
           value={{
-            color: "#043927",
             className: "Icon",
             size: "50px",
             title: "Link to Github",
@@ -42,7 +41,6 @@ export default function App() {
         </IconContext.Provider>
         <IconContext.Provider
           value={{
-            color: "#043927",
             className: "Icon",
             size: "50px",
             title: "Link to Linkedin",
@@ -54,7 +52,6 @@ export default function App() {
         </IconContext.Provider>
         <IconContext.Provider
           value={{
-            color: "#043927",
             className: "Icon",
             size: "50px",
             title: "Email",

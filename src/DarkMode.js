@@ -1,5 +1,6 @@
 import "./DarkMode.css";
 import { ChangeEventHandler } from "react";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const setDark = () => {
   localStorage.setItem("theme", "dark");
@@ -35,7 +36,9 @@ const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
 const DarkMode = () => {
   return (
     <div className='toggle-theme-wrapper'>
-      <span>☀️</span>
+      <span>
+        <MdOutlineLightMode />
+      </span>
       <label className='toggle-theme' htmlFor='checkbox'>
         <input
           type='checkbox'
@@ -45,7 +48,9 @@ const DarkMode = () => {
         />
         <div className='slider round'></div>
       </label>
-      <span>🌒</span>
+      <span>
+        <MdOutlineDarkMode />
+      </span>
     </div>
   );
 };

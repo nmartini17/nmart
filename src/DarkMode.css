@@ -1,11 +1,11 @@
 :root {
   --font-color: #043927;
   --background-color: #e7e5e1;
-  --link-color: cornFlowerBlue;
+  --link-color: #043927;
 }
 
 [data-theme="dark"] {
-  --font-color: #e7e5e1;
+  --font-color: lightblue;
   --background-color: #333;
   --link-color: lightblue;
 }
@@ -69,7 +69,7 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider {
-  background-color: cornflowerblue;
+  background-color: lightblue;
 }
 
 .slider.round {
