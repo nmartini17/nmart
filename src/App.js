@@ -4,10 +4,14 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaTrademark } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import logo from "./no-bg.svg";
+import DarkMode from "./DarkMode";
 
 export default function App() {
   return (
     <div>
+      <div className='dark-mode-toggle'>
+        <DarkMode />
+      </div>
       <a href='/' className='Logo'>
         <img
           src={logo}
