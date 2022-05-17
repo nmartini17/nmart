@@ -8,14 +8,13 @@ import DarkMode from "./DarkMode";
 
 export default function App() {
   return (
-    <div>
+    <div className='container'>
       <div className='dark-mode-toggle'>
         <DarkMode />
       </div>
       <a href='/' className='Logo'>
         <img
           src={logo}
-          class='LogoColor'
           alt='NM'
           width='62,5'
           height='35'
@@ -23,14 +22,13 @@ export default function App() {
         />
       </a>
 
-      <div className='TitleDiv'>
+      <div className='titleDiv'>
         <h1>Velkommen</h1>
       </div>
 
-      <div className='Icons'>
+      <div className='icons'>
         <IconContext.Provider
           value={{
-            className: "Icon",
             size: "50px",
             title: "Link to Github",
           }}
@@ -41,7 +39,6 @@ export default function App() {
         </IconContext.Provider>
         <IconContext.Provider
           value={{
-            className: "Icon",
             size: "50px",
             title: "Link to Linkedin",
           }}
@@ -52,7 +49,6 @@ export default function App() {
         </IconContext.Provider>
         <IconContext.Provider
           value={{
-            className: "Icon",
             size: "50px",
             title: "Email",
           }}
